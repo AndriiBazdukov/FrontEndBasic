@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      width: 400px;
+      padding: 30px;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .tabs {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tabs a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .tabs a.active {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group.password {
+      position: relative;
+    }
+
+    .form-group.password i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      color: #888;
+    }
+
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .social-btn img {
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <span class="close">&times;</span>
+
+  <div class="tabs">
+    <a href="#" class="login">Login</a> | 
+    <a href="#" class="register active">Register</a>
+  </div>
+
+  <h2>Enter your email and password to register.</h2>
+
+  <div class="form-group">
+    <input type="text" placeholder="Username" />
+  </div>
+  <div class="form-group">
+    <input type="email" placeholder="Enter your email address" />
+  </div>
+  <div class="form-group password">
+    <input type="password" placeholder="Password" />
+    <i>👁️</i>
+  </div>
+  <div class="form-group">
+    <input type="password" placeholder="Confirm Password" />
+  </div>
+
+  <button class="btn">Register</button>
+
+  <div class="divider">Or register with</div>
+
+  <button class="social-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google" />
+    Continue with Google
+  </button>
+  <button class="social-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" />
+    Continue with Facebook
+  </button>
+</div>
+
+</body>
+</html>
