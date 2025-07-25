@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cera Pro', sans-serif;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            background: #fff;
+            padding: 75px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 32px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: rgb(61, 61, 61, 1);
+            margin: 0 5px;
+        }
+
+        header a:nth-child(2) {
+            color: rgb(70, 163, 88, 1);
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(61, 61, 61, 1);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid rgba(234, 234, 234, 1);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 12px;
+            background-color: rgba(70, 163, 88, 1);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgba(61, 61, 61, 1);
+            font-size: 14px;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgba(234, 234, 234, 1);
+            margin: 0 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(234, 234, 234, 1);
+            border-radius: 4px;
+            background: white;
+            color: rgba(114, 114, 114, 1);
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .password-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .password-wrapper input {
+            width: 100%;
+        }
+
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="./pages/login.html">Login</a> |
+            <a href="./index.html">Register</a>
+        </header>
+        <h2>Enter your email and password to register.</h2>
+        <form>
+            <input type="text" id="usernameInput" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁‍🗨</span>
+            </div>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+        <div class="divider">Or register with</div>
+        <button>
+            <img src="./img/google.png" alt="Google" />
+            Continue with Google
+        </button>
+        <button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+                alt="Facebook" />
+            Continue with Facebook
+        </button>
+
+
+    </div>
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const toggleIcon = document.querySelector(".toggle-password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.textContent = "👁️";
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.textContent = "👁‍🗨";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
