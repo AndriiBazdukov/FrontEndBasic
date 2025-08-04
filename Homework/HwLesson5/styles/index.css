@@ -1,0 +1,48 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .logo {
+      margin-top: 120px;
+    }
+
+    .search-box {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-box input {
+      width: 560px;
+      height: 44px;
+      padding: 0 45px 0 50px;
+      font-size: 16px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+      outline: none;
+    }
+
+    .shortcut {
+      margin-top: 40px;
+    }
+
+    .add-shortcut {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #e8f0fe;
+      font-size: 32px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #1a73e8;
+    }
+
+    .shortcut-label {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #5f6368;
+    }
