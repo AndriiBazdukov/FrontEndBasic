@@ -1,0 +1,169 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "CeraPro";
+}
+
+header {
+    height: 53px;
+    position: relative;
+    margin: 30px 0px 12px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 34.3px;
+    display: table;
+}
+
+.logo_label {
+    display: table-cell;
+    vertical-align: middle;
+    display: inline-block;
+    img {
+        width: 34.3px;
+        height: 34.3px;
+    }
+
+}
+
+.logo_letters {
+    display: table-cell; 
+    vertical-align: middle;
+    font-size: 4px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.logo_letters img {
+    height: 12.8px;
+    vertical-align: middle;
+}
+
+.main_menu {
+    position: absolute;
+    left: 30%;
+}
+
+.main_menu input {
+    background-color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0 25px;
+    padding-bottom: 15px;
+}
+
+.main_menu input:first-child {
+    height: 53px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    border-bottom: 3px solid #46a358;
+}
+
+.login {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.login .login_button {
+    width: 100px;
+    height: 35px;
+    background-color: #46a358;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.login_button svg {
+    vertical-align: middle;
+}
+
+.login_button .text {
+    vertical-align: middle;
+}
+
+.body_container {
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left_side {
+    align-content: start;
+    display: inline-block;
+    max-width: 650px;
+    width: 60%;
+
+    h2 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        margin: 68px 0px 0px 43px;
+        color: rgba(61, 61, 61, 1);
+    }
+
+    h1 {
+        margin: 7px 0px 0px 40px;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: rgba(61, 61, 61, 1);
+
+        span {
+            color: rgba(70, 163, 88, 1);
+        }
+
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 5px 0px 0px 43px;
+    }
+
+    button {
+        padding: 11px 26px 9px;
+        margin: 44px 0px 85px 41px;
+        opacity: 1;
+        border-radius: 6px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(70, 163, 88, 1);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+}
+
+.right_side {
+    display: inline-block;
+    max-width: 40%;
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .small_img {
+        position: absolute;
+        left: 55px;
+        bottom: 17px;
+        width: 135px;
+        height: 135px;
+    }
+}
