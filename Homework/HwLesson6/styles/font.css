@@ -22,3 +22,9 @@
     src: url(../fonts/CeraPro-Black.woff) format("woff"),
     url(../fonts/CeraPro-Black.ttf) format("TrueType");
 }
+@font-face {
+    font-family: 'CeraPro';
+    font-weight: 300;
+    src: url(../fonts/CeraPro-Light.woff) format("woff"),
+    url(../fonts/CeraPro-Light.ttf) format("TrueType");
+}
