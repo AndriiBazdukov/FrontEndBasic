@@ -30,6 +30,11 @@ body {
         line-height: 40px;
     }
 
+    button:first-of-type {
+        font-weight: 700;
+        color: rgba(70, 163, 88, 1);
+    }
+
     button:last-of-type {
         padding-bottom: 830px;
     }
