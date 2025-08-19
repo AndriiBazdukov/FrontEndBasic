@@ -11,16 +11,14 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     height: 53px;
-    position: relative;
     margin: 30px 0px 12px;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
 }
 
 .logo {
-    position: absolute;
-    left: 0;
-    top: 0px;
     height: 34.3px;
     display: table;
 }
@@ -52,39 +50,46 @@ header {
 
 .main_menu {
     z-index: 2;
-    position: absolute;
-    left: 30%;
 }
 
 .main_menu>ul {
     display: flex;
     gap: 50px;
 
-    input {
+    >li {
         position: relative;
+
+        &:hover {
+            border-bottom: 3px solid #46a358;
+
+            ul {
+                display: block;
+            }
+
+            button {
+                font-weight: 700;
+            }
+        }
+    }
+
+    button {
         height: 53px;
         background-color: white;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
         padding-bottom: 15px;
-
-        &:hover {
-            font-weight: 700;
-            border-bottom: 3px solid #46a358;
-        }
     }
 
     >li ul {
         padding-top: 12px;
         padding-right: 6px;
         display: none;
-
         min-width: 188px;
         position: absolute;
-        left: 62%;
+        left: 50%;
         transform: translateX(-50%);
-        bottom: -292%;
+        top: 100%;
         flex-direction: column;
 
         li {
@@ -138,12 +143,7 @@ header {
     display: block;
 }
 
-
-.login {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
+.login {}
 
 .login .login_button {
     width: 100px;
