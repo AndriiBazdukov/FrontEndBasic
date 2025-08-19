@@ -4,6 +4,12 @@ body {
     font-family: "CeraPro";
 }
 
+.encode-sans-expanded-regular {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     height: 53px;
     position: relative;
@@ -23,6 +29,7 @@ header {
     display: table-cell;
     vertical-align: middle;
     display: inline-block;
+
     img {
         width: 34.3px;
         height: 34.3px;
@@ -31,7 +38,7 @@ header {
 }
 
 .logo_letters {
-    display: table-cell; 
+    display: table-cell;
     vertical-align: middle;
     font-size: 4px;
     display: inline-block;
@@ -44,26 +51,89 @@ header {
 }
 
 .main_menu {
+    z-index: 2;
     position: absolute;
     left: 30%;
 }
 
-.main_menu input {
-    background-color: white;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    margin: 0 25px;
-    padding-bottom: 15px;
+.main_menu>ul {
+    display: flex;
+    gap: 50px;
+
+    input {
+        position: relative;
+        height: 53px;
+        background-color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        padding-bottom: 15px;
+
+        &:hover {
+            font-weight: 700;
+            border-bottom: 3px solid #46a358;
+        }
+    }
+    
+    >li 
+        ul {
+        padding-top: 12px;
+        padding-right: 6px;
+        display: none;
+        
+        min-width: 188px;
+        position: absolute;
+        left: 62%;
+        transform: translateX(-50%);
+        bottom: -292%;
+        flex-direction: column;
+
+        li {
+            position: relative;
+            svg {
+                position: absolute;
+                right: 17px;
+                top: 13px;
+            }
+            background: rgba(237, 246, 238, 1);
+            padding: 9px 0 10px 14px;
+            &:hover {
+                background: rgba(26, 113, 42, 1);
+                > a {
+                    color: white;
+                }
+            }
+
+            ul {
+                min-width: 178px;
+                position: absolute;
+                left: 150%;
+                top: -333%;
+                max-height: 215px;
+            }
+        }
+        a {
+            font-family: Encode Sans Expanded;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: none;
+            color: rgba(61, 61, 61, 1);
+        }
+
+        
+    }
 }
 
-.main_menu input:first-child {
-    height: 53px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    border-bottom: 3px solid #46a358;
+.main_menu > ul > li:hover > ul {
+    display: block; 
 }
+
+.main_menu > ul > li > ul > li:last-child:hover > ul {
+    display: block; 
+}
+
 
 .login {
     position: absolute;
@@ -155,10 +225,12 @@ header {
     max-width: 40%;
     width: 100%;
     position: relative;
+
     img {
         width: 100%;
         height: auto;
     }
+
     .small_img {
         position: absolute;
         left: 55px;
