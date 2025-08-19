@@ -74,13 +74,12 @@ header {
             border-bottom: 3px solid #46a358;
         }
     }
-    
-    >li 
-        ul {
+
+    >li ul {
         padding-top: 12px;
         padding-right: 6px;
         display: none;
-        
+
         min-width: 188px;
         position: absolute;
         left: 62%;
@@ -90,16 +89,20 @@ header {
 
         li {
             position: relative;
+
             svg {
                 position: absolute;
                 right: 17px;
                 top: 13px;
             }
+
             background: rgba(237, 246, 238, 1);
             padding: 9px 0 10px 14px;
+
             &:hover {
                 background: rgba(26, 113, 42, 1);
-                > a {
+
+                >a {
                     color: white;
                 }
             }
@@ -112,6 +115,7 @@ header {
                 max-height: 215px;
             }
         }
+
         a {
             font-family: Encode Sans Expanded;
             font-weight: 400;
@@ -122,16 +126,16 @@ header {
             color: rgba(61, 61, 61, 1);
         }
 
-        
+
     }
 }
 
-.main_menu > ul > li:hover > ul {
-    display: block; 
+.main_menu>ul>li:hover>ul {
+    display: block;
 }
 
-.main_menu > ul > li > ul > li:last-child:hover > ul {
-    display: block; 
+.main_menu>ul>li>ul>li:last-child:hover>ul {
+    display: block;
 }
 
 
