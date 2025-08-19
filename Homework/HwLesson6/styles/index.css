@@ -62,7 +62,7 @@ header {
         &:hover {
             border-bottom: 3px solid #46a358;
 
-            > ul {
+            >ul {
                 display: block;
             }
 
@@ -83,7 +83,7 @@ header {
 
     >li ul {
         padding-top: 12px;
-        padding-right: 6px;
+        padding-right: 8px;
         display: none;
         min-width: 188px;
         position: absolute;
@@ -135,15 +135,9 @@ header {
     }
 }
 
-.main_menu>ul>li:hover>ul {
-    display: block;
-}
-
 .main_menu>ul>li>ul>li:last-child:hover>ul {
     display: block;
 }
-
-.login {}
 
 .login .login_button {
     width: 100px;
