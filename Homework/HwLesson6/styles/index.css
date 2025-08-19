@@ -62,7 +62,7 @@ header {
         &:hover {
             border-bottom: 3px solid #46a358;
 
-            ul {
+            > ul {
                 display: block;
             }
 
