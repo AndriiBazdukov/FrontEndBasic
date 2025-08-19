@@ -76,7 +76,6 @@ body {
                 border-bottom: 2px solid rgba(70, 163, 88, 1);
             }
         }
-
         .sort {
             float: right;
         }
@@ -84,16 +83,42 @@ body {
 
     .main_content {
         margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+        justify-content: space-between;
 
-        img {
-            margin-right: 33px;
-            margin-bottom: 70px;
-            width: 30.3%;
-            height: auto;
-        }
-
-        img:nth-child(3n) {
-            margin-right: 0px;
+        > div {
+            position: relative;
+            flex: 0 0 30%;
+            border-top: 1px solid transparent;
+            img {
+                max-width: 100%;
+                margin-bottom: 70px;
+            }
+            &:hover{
+                border-top: 1px solid rgba(70, 163, 88, 1);
+                .icons {
+                    z-index: 1;
+                }
+            }
+            .icons {
+                z-index: -1;
+                display: flex;
+                position: absolute;
+                bottom: 30%;
+                left: 50%;
+                transform: translateX(-50%);
+                gap: 15px;
+                svg {
+                    background-color: white;
+                    border-radius: 4px;
+                    padding: 8px 6px 7px;
+                    &:hover {
+                        color: rgba(70, 163, 88, 1);
+                    }
+                }
+            }
         }
     }
 }
