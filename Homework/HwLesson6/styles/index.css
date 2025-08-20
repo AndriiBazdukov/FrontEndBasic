@@ -99,6 +99,8 @@ header {
                 position: absolute;
                 right: 17px;
                 top: 13px;
+                color: rgba(61, 61, 61, 1);
+                transform: scaleX(-1);
             }
 
             background: rgba(237, 246, 238, 1);
@@ -109,6 +111,10 @@ header {
 
                 >a {
                     color: white;
+                }
+                svg {
+                    color: white;
+                    transform: scaleX(1);
                 }
             }
 
