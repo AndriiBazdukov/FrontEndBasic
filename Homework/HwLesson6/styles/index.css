@@ -173,6 +173,9 @@ body {
 
     .login>svg {
         margin-right: 22px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .login_button svg {
